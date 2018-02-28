@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4D2A7C0B2045C29300A3133D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A7C0A2045C29300A3133D /* AppDelegate.swift */; };
-		4D2A7C0D2045C29300A3133D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A7C0C2045C29300A3133D /* ViewController.swift */; };
 		4D2A7C102045C29300A3133D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2A7C0E2045C29300A3133D /* Main.storyboard */; };
 		4D2A7C122045C29300A3133D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2A7C112045C29300A3133D /* Assets.xcassets */; };
 		4D2A7C152045C29300A3133D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2A7C132045C29300A3133D /* LaunchScreen.storyboard */; };
+		4D2A7C1D2045C69600A3133D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A7C1C2045C69600A3133D /* TableViewController.swift */; };
+		4D2A7C212045C87700A3133D /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A7C202045C87700A3133D /* CurrencyCell.swift */; };
+		4D2A7C232045C97000A3133D /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2A7C222045C97000A3133D /* CurrencyCell.xib */; };
+		4D2A7C252045D09100A3133D /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A7C242045D09100A3133D /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D2A7C072045C29300A3133D /* Currencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2A7C0A2045C29300A3133D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D2A7C0C2045C29300A3133D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D2A7C0F2045C29300A3133D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D2A7C112045C29300A3133D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2A7C142045C29300A3133D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D2A7C162045C29300A3133D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D2A7C1C2045C69600A3133D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4D2A7C202045C87700A3133D /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		4D2A7C222045C97000A3133D /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
+		4D2A7C242045D09100A3133D /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				4D2A7C0A2045C29300A3133D /* AppDelegate.swift */,
-				4D2A7C0C2045C29300A3133D /* ViewController.swift */,
-				4D2A7C0E2045C29300A3133D /* Main.storyboard */,
+				4D2A7C2C2046F61500A3133D /* Data */,
+				4D2A7C2A2046F5F000A3133D /* Main View */,
+				4D2A7C2B2046F60700A3133D /* Table Cell */,
 				4D2A7C112045C29300A3133D /* Assets.xcassets */,
 				4D2A7C132045C29300A3133D /* LaunchScreen.storyboard */,
 				4D2A7C162045C29300A3133D /* Info.plist */,
 			);
 			path = Currencies;
+			sourceTree = "<group>";
+		};
+		4D2A7C2A2046F5F000A3133D /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				4D2A7C1C2045C69600A3133D /* TableViewController.swift */,
+				4D2A7C0E2045C29300A3133D /* Main.storyboard */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		4D2A7C2B2046F60700A3133D /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D2A7C202045C87700A3133D /* CurrencyCell.swift */,
+				4D2A7C222045C97000A3133D /* CurrencyCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		4D2A7C2C2046F61500A3133D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D2A7C242045D09100A3133D /* DataProvider.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2A7C232045C97000A3133D /* CurrencyCell.xib in Resources */,
 				4D2A7C152045C29300A3133D /* LaunchScreen.storyboard in Resources */,
 				4D2A7C122045C29300A3133D /* Assets.xcassets in Resources */,
 				4D2A7C102045C29300A3133D /* Main.storyboard in Resources */,
@@ -136,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D2A7C0D2045C29300A3133D /* ViewController.swift in Sources */,
+				4D2A7C212045C87700A3133D /* CurrencyCell.swift in Sources */,
 				4D2A7C0B2045C29300A3133D /* AppDelegate.swift in Sources */,
+				4D2A7C252045D09100A3133D /* DataProvider.swift in Sources */,
+				4D2A7C1D2045C69600A3133D /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
